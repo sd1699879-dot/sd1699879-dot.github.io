@@ -4,110 +4,298 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>My Aesthetic Diary ♡</title>
+  <title>Little Moments 🌷</title>
 
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      background: #fff7f8;
-      color: #6d5058;
-      font-family: Georgia, serif;
+      background: #fff8fa;
+      color: #624f57;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    header {
       text-align: center;
+      padding: 55px 20px 35px;
     }
 
-    .container {
-      max-width: 850px;
-      margin: auto;
-      padding: 45px 20px;
-    }
-
-    .top {
-      font-size: 25px;
-      margin-bottom: 15px;
+    .flower {
+      font-size: 28px;
     }
 
     h1 {
-      font-size: 42px;
-      margin: 10px 0;
+      font-size: 45px;
       font-weight: normal;
+      margin: 12px 0;
+      color: #70545e;
     }
 
-    .subtitle {
+    .tagline {
       font-size: 18px;
-      margin-bottom: 35px;
-      color: #8a6871;
+      color: #94747e;
+      font-style: italic;
     }
 
-    .diary-photo {
+    nav {
+      text-align: center;
+      padding: 15px;
+      background: #fff;
+      border-top: 1px solid #f2e2e6;
+      border-bottom: 1px solid #f2e2e6;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #755963;
+      margin: 0 12px;
+      font-size: 15px;
+    }
+
+    nav a:hover {
+      color: #b07b8b;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    .hero img {
       width: 100%;
       max-width: 650px;
-      border-radius: 25px;
-      box-shadow: 0 10px 30px rgba(100, 70, 80, 0.18);
+      border-radius: 28px;
+      box-shadow: 0 12px 35px rgba(90, 60, 70, 0.16);
     }
 
-    .note {
-      background: #ffffff;
-      max-width: 600px;
-      margin: 35px auto;
-      padding: 30px 25px;
-      border-radius: 25px;
-      box-shadow: 0 5px 20px rgba(100, 70, 80, 0.08);
+    .content {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 10px 20px 60px;
     }
 
-    .note h2 {
-      font-size: 27px;
+    .post {
+      background: white;
+      padding: 35px;
+      margin-top: 30px;
+      border-radius: 28px;
+      box-shadow: 0 7px 25px rgba(90, 60, 70, 0.08);
+    }
+
+    .post h2 {
+      text-align: center;
+      font-size: 29px;
+      font-weight: normal;
+      color: #70545e;
+      margin-bottom: 28px;
+    }
+
+    .post h3 {
+      font-size: 22px;
+      font-weight: normal;
+      color: #85616d;
+      margin-top: 30px;
+    }
+
+    .post p {
+      font-size: 17px;
+      line-height: 1.9;
+      margin: 16px 0;
+    }
+
+    .welcome {
+      text-align: center;
+      font-style: italic;
+      color: #96747e;
+    }
+
+    .divider {
+      text-align: center;
+      margin: 30px 0;
+      color: #c49aa6;
+      font-size: 20px;
+    }
+
+    .section {
+      background: #fff;
+      margin-top: 30px;
+      padding: 30px;
+      border-radius: 25px;
+      text-align: center;
+      box-shadow: 0 7px 25px rgba(90, 60, 70, 0.07);
+    }
+
+    .section h2 {
       font-weight: normal;
     }
 
-    .note p {
-      font-size: 17px;
-      line-height: 1.8;
+    footer {
+      text-align: center;
+      padding: 35px 20px;
+      color: #96747e;
+      font-size: 14px;
     }
 
-    .footer {
-      margin-top: 35px;
-      font-size: 15px;
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 36px;
+      }
+
+      .post {
+        padding: 25px 20px;
+      }
+
+      .post p {
+        font-size: 16px;
+      }
+
+      nav a {
+        margin: 0 6px;
+        font-size: 13px;
+      }
     }
   </style>
 </head>
 
 <body>
 
-  <div class="container">
+  <header id="home">
+    <div class="flower">🌷 ✨ 🌷</div>
 
-    <div class="top">♡ 🌷 ♡</div>
+    <h1>Little Moments</h1>
 
-    <h1>My Aesthetic Diary</h1>
-
-    <p class="subtitle">
-      A little hello from me ✨
+    <p class="tagline">
+      A little corner of my internet ♡
     </p>
+  </header>
 
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#posts">My Posts</a>
+    <a href="#memories">Memories</a>
+    <a href="#dreams">Dreams</a>
+  </nav>
+
+  <section class="hero">
     <img
-      class="diary-photo"
       src="file_00000000ba848211ad6ffee2b7703aee.png"
       alt="My Aesthetic Diary"
     >
+  </section>
 
-    <div class="note">
-      <h2>Dear Diary ♡</h2>
+  <main class="content">
 
-      <p>
-        Little moments, pretty memories and beautiful dreams —
-        welcome to my tiny corner of the internet. 🌸
+    <article class="post" id="posts">
+
+      <h2>🌷 My First Blog — Welcome to Little Moments</h2>
+
+      <p class="welcome">
+        Hey you, welcome to my little corner of the internet. ✨
       </p>
 
       <p>
-        Here I can keep my favourite memories,
-        thoughts and little pieces of my life. ✨
+        Kabhi-kabhi life ke bade moments se zyada, woh chhoti-chhoti
+        cheezein yaad reh jaati hain—ek peaceful morning, favourite song,
+        random chai breaks, kisi beautiful place ki trip, ya bas ek normal
+        sa din jo unexpectedly special ban gaya. ☕🌸
       </p>
-    </div>
 
-    <div class="footer">
-      Made with love ♡
-    </div>
+      <p>
+        Isi thought ke saath Little Moments start hua.
+      </p>
 
-  </div>
+      <p>
+        Ye blog meri everyday life ke little stories, travel diaries,
+        favourite places, food discoveries aur un moments ke baare mein
+        hoga jinhe main yaad rakhna chahti hoon. 📸✈️
+      </p>
+
+      <p>
+        Yahan sab kuch perfect ya perfectly planned nahi hoga—and honestly,
+        that's the beauty of it. Kabhi ek simple day ki story hogi, kabhi
+        kisi new place ki journey, aur kabhi bas koi random thought jo
+        share karne ka mann kare. 🌷
+      </p>
+
+      <div class="divider">♡ ♡ ♡</div>
+
+      <h3>✈️ A little bit of travel</h3>
+
+      <p>
+        Mujhe new places explore karna, unki vibes feel karna aur unke
+        chhote-chhote details notice karna achha lagta hai.
+      </p>
+
+      <p>
+        Isliye jab bhi koi interesting trip hogi, uski travel diary yahin
+        milegi—places, experiences, food, photos aur woh little moments
+        jo camera mein capture nahi ho paate. 🌅
+      </p>
+
+      <h3>🌸 And a lot of everyday life</h3>
+
+      <p>
+        Life sirf travelling aur big achievements ke baare mein nahi hai.
+      </p>
+
+      <p>
+        Kabhi favourite song sunte hue room mein rehna, kabhi friends ke
+        saath random plans banana, kabhi kuch tasty banana, aur kabhi bina
+        kisi reason ke khush ho jaana…
+      </p>
+
+      <p>
+        Maybe these are the moments that matter the most. 🤍
+      </p>
+
+      <div class="divider">🌷 ✨ 🌷</div>
+
+      <p>
+        So, welcome to Little Moments.
+      </p>
+
+      <p>
+        I hope jab bhi tum yahan aao, tumhe lage jaise kisi diary ka cute
+        sa page open kiya hai. 📖✨
+      </p>
+
+      <p>
+        See you in the next little moment… 🌷
+      </p>
+
+      <p style="text-align: right; font-style: italic;">
+        — Little Moments
+      </p>
+
+    </article>
+
+    <section class="section" id="memories">
+      <h2>📸 Memories</h2>
+      <p>
+        Little memories, beautiful places and moments worth keeping. 🌸
+      </p>
+    </section>
+
+    <section class="section" id="dreams">
+      <h2>🌙 Dreams & Little Things</h2>
+      <p>
+        A place for dreams, goals and all the little things I want to
+        experience someday. ✨
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    Made with love ♡ <br>
+    Welcome to my Little Moments 🌷
+  </footer>
 
 </body>
 </html>
