@@ -1,58 +1,145 @@
-<!doctype html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Little Moments ✨</title>
+
 <style>
-:root{--bg:#fffaf7;--text:#302a30;--muted:#766d73;--pink:#c9798c;--soft:#f6e7eb;--line:#eadfe2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Georgia,serif;line-height:1.7}
-nav{position:sticky;top:0;z-index:3;background:#fff;border-bottom:1px solid var(--line);padding:18px 7%;display:flex;justify-content:space-between;align-items:center}.logo{font-size:24px;font-weight:bold;color:var(--pink)}nav a{margin-left:20px;text-decoration:none;color:var(--text);font:14px Arial}
-.hero{padding:80px 7%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;background:linear-gradient(135deg,#fffaf7,#f8e9ed)}h1{font-size:56px;line-height:1.05;margin:12px 0}.hero p{font-size:18px;color:var(--muted)}.tag{font:12px Arial;color:var(--pink);text-transform:uppercase;letter-spacing:1px}.btn,.read{display:inline-block;color:#fff;background:var(--pink);padding:11px 19px;border-radius:25px;text-decoration:none;font:600 14px Arial}
-.hero-art{height:330px;border-radius:28px;background:linear-gradient(145deg,#dcb7bf,#f7dfe4,#e9c9a9);display:flex;align-items:flex-end;padding:25px}.hero-art span{background:#ffffffe8;padding:10px 14px;border-radius:15px;font:14px Arial}
-section{padding:65px 7%}.title{font-size:35px;margin:0 0 5px}.intro{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:28px}.card{background:#fff;border:1px solid var(--line);border-radius:22px;overflow:hidden}.cover{height:175px;display:flex;align-items:center;justify-content:center;font-size:52px;background:linear-gradient(135deg,#e8c2ca,#f5e1c8)}.body{padding:20px}.body h3{font-size:22px;margin:8px 0}.body p{color:var(--muted);font-size:15px}
-.article{max-width:850px;margin:auto}.article h1{font-size:46px}.article p{font-size:18px}.article h2{font-size:28px;margin-top:38px}.back{color:var(--pink);font:600 14px Arial;text-decoration:none}
-.about{background:var(--soft);border-radius:30px;padding:40px;display:grid;grid-template-columns:.7fr 1.3fr;gap:30px}.avatar{min-height:230px;border-radius:24px;background:linear-gradient(145deg,#e8c0c9,#f5dfc8);display:flex;align-items:center;justify-content:center;font-size:75px}
-footer{text-align:center;background:#302a30;color:#eee;padding:30px;font:14px Arial}footer p{color:#ccc}
-@media(max-width:800px){nav{padding:15px 5%}nav div:last-child{display:none}.hero{grid-template-columns:1fr;padding:55px 6%}h1{font-size:42px}.hero-art{height:250px}.grid,.about{grid-template-columns:1fr}section{padding:50px 6%}.article h1{font-size:38px}}
+body{
+  margin:0;
+  background:#fffaf7;
+  color:#493f3b;
+  font-family:Arial,sans-serif;
+  line-height:1.7;
+}
+
+header{
+  text-align:center;
+  padding:55px 20px 35px;
+  background:#f8e8e4;
+}
+
+h1{
+  font-family:Georgia,serif;
+  font-size:42px;
+  margin:0;
+  color:#6d5550;
+}
+
+.subtitle{
+  margin-top:10px;
+  color:#8b7771;
+}
+
+nav{
+  text-align:center;
+  padding:15px;
+  background:white;
+  border-bottom:1px solid #eee;
+}
+
+nav a{
+  color:#765e58;
+  text-decoration:none;
+  margin:0 12px;
+}
+
+main{
+  max-width:800px;
+  margin:auto;
+  padding:45px 20px;
+}
+
+.post{
+  background:white;
+  padding:28px;
+  border-radius:22px;
+  box-shadow:0 5px 25px rgba(100,70,60,.08);
+}
+
+.post h2{
+  font-family:Georgia,serif;
+  color:#705852;
+}
+
+.post img{
+  width:100%;
+  border-radius:18px;
+  margin:15px 0 20px;
+}
+
+.date{
+  font-size:13px;
+  color:#a18b84;
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:#f8e8e4;
+  color:#806d67;
+}
 </style>
 </head>
-<body>
-<nav><div class="logo">Little Moments ✨</div><div><a href="#home">Home</a><a href="#life">My Life</a><a href="#travel">Travel</a><a href="#about">About</a></div></nav>
 
-<header class="hero" id="home">
-<div><div class="tag">Life • Travel • Memories</div><h1>Little moments,<br>big memories.</h1><p>A personal journal of everyday life, spontaneous adventures, beautiful places and memories worth keeping.</p><a class="btn" href="#posts">Read the blog →</a></div>
-<div class="hero-art"><span>📸 Welcome to my little corner of the internet</span></div>
+<body>
+
+<header>
+  <h1>Little Moments ✨</h1>
+  <p class="subtitle">A little diary of everyday life, memories & travels 🌷</p>
 </header>
 
-<section id="posts"><h2 class="title">Latest stories</h2><p class="intro">A few stories from ordinary days and not-so-ordinary journeys.</p>
-<div class="grid">
-<article class="card" id="life"><div class="cover">☕🌸</div><div class="body"><div class="tag">Daily Life</div><h3>My First Blog — Welcome to Little Moments</h3><p>A little introduction to this space, everyday life, travel and the moments worth remembering.</p><a class="read" href="#first-blog">Read story →</a></div></article>
-<article class="card" id="travel"><div class="cover">✈️🌅</div><div class="body"><div class="tag">Travel Diary</div><h3>My Next Adventure</h3><p>Places I want to explore, things I want to see and memories I want to make.</p></div></article>
-<article class="card"><div class="cover">🍜📖</div><div class="body"><div class="tag">Lifestyle</div><h3>Little Things I Love</h3><p>Food, music, quiet evenings and all the tiny things that make life feel special.</p></div></article>
-</div></section>
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Diary</a>
+  <a href="#">Travel ✈️</a>
+  <a href="#">About</a>
+</nav>
 
-<section class="article" id="first-blog">
-<a class="back" href="#posts">← Back to stories</a>
-<div class="tag">Daily Life</div>
-<h1>My First Blog — Welcome to Little Moments 🌷</h1>
-<p class="intro">Hey you, welcome to my little corner of the internet. ✨</p>
-<p>Kabhi-kabhi life ke bade moments se zyada, woh chhoti-chhoti cheezein yaad reh jaati hain—ek peaceful morning, favourite song, random chai breaks, kisi beautiful place ki trip, ya bas ek normal sa din jo unexpectedly special ban gaya. ☕🌸</p>
-<p>Isi thought ke saath <strong>Little Moments</strong> start hua.</p>
-<p>Ye blog meri everyday life ke little stories, travel diaries, favourite places, food discoveries aur un moments ke baare mein hoga jinhe main yaad rakhna chahti hoon. 📸✈️</p>
-<p>Yahan sab kuch perfect ya perfectly planned nahi hoga—and honestly, that's the beauty of it. Kabhi ek simple day ki story hogi, kabhi kisi new place ki journey, aur kabhi bas koi random thought jo share karne ka mann kare. 🌷</p>
-<h2>✈️ A little bit of travel</h2>
-<p>Mujhe new places explore karna, unki vibes feel karna aur unke chhote-chhote details notice karna achha lagta hai.</p>
-<p>Isliye jab bhi koi interesting trip hogi, uski <strong>travel diary</strong> yahin milegi—places, experiences, food, photos aur woh little moments jo camera mein capture nahi ho paate. 🌅</p>
-<h2>🌸 And a lot of everyday life</h2>
-<p>Life sirf travelling aur big achievements ke baare mein nahi hai.</p>
-<p>Kabhi favourite song sunte hue room mein rehna, kabhi friends ke saath random plans banana, kabhi kuch tasty banana, aur kabhi bina kisi reason ke khush ho jaana…</p>
-<p><strong>Maybe these are the moments that matter the most. 🤍</strong></p>
-<p>So, welcome to <strong>Little Moments</strong>.</p>
-<p>I hope jab bhi tum yahan aao, tumhe lage jaise kisi diary ka cute sa page open kiya hai. 📖✨</p>
-<p><strong>See you in the next little moment… 🌷</strong></p>
-</section>
+<main>
 
-<section id="about"><div class="about"><div class="avatar">🌷</div><div><div class="tag">About me</div><h2 class="title">A little space for everyday stories.</h2><p>This is a personal space to collect everyday stories, travel diaries, favourite discoveries and little memories.</p><p>New posts can be added whenever something interesting happens. ✨</p></div></div></section>
-<footer><strong>Little Moments ✨</strong><p>Life • Travel • Memories</p><p>© 2026 — Made with a little help from AI.</p></footer>
-</body></html>
+<div class="post">
+
+  <p class="date">My first little post 🌷</p>
+
+  <h2>A Little Hello From Me 🤍</h2>
+
+  <p>
+    Heyy ✨<br><br>
+
+    Welcome to my little corner of the internet. 🌷
+  </p>
+
+  <p>
+    Ye jagah meri everyday life ke un chhote-chhote
+    moments ke liye hai jo kabhi ordinary lagte hain,
+    but baad mein sabse special memories ban jaate hain. 🤍
+  </p>
+
+  <p>
+    Yahan tumhe daily life, little joys, food, random thoughts,
+    outings aur kabhi-kabhi travel diaries bhi milengi. ✈️☕
+  </p>
+
+  <p>
+    Main chahti hoon ki ye website ek online diary jaisi feel ho—
+    perfect nahi, bas real, simple aur thodi si aesthetic. 📖✨
+  </p>
+
+  <p>
+    So… welcome to <b>Little Moments</b>. 🌸<br>
+    Let's make some memories. 🫶🏻
+  </p>
+
+</div>
+
+</main>
+
+<footer>
+  Made with little moments & lots of memories 🌷
+</footer>
+
+</body>
+</html>
